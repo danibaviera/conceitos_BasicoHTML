@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html lang="pt-br"> 
+    <head>
+        <meta charset="UTF-8">
+        <title> Quiz para programadores!</title>
+        <meta name = "decription" content = "Quiz interativo para teste de conhecimento"> 
+    </head>
+    <body>
+        <header> 
+            <h1>Quiz interativo para programadores</h1>
+            <p>Teste seus conhecimentos em programação e veja sua pontuação! </p>
+        </header>
+
+        <main> 
+            <!--Introdução-->
+            <section> 
+                <h2>Sobre o quiz</h2>
+                <p><strong>Esse quiz</strong>  foi desenvolvido para testar seus
+                conhecimentos em programação, como <em>linguagem de
+                programação, conceitos básicos e mais</em>./p>
+
+                <p> Você encontrará diferentes tipos de perguntas, incluindo múltipla escolha, texto e perguntas de data. 
+                <br> Desafie-se com este quiz !</p>
+
+                <p>Você poderá encontrar alguns acrônimos como 
+                <abbr title="HyperText Markup Language">HTML</abbr>  e <abbr title="Cascading Style Sheets">
+                CSS</abbr>, que são comumente usados em questões relacionadas ao desenvolvimento web</p>
+            </section>
+
+            <!--Pergunta1: Multipla escolha-->
+            <section> 
+                <h3>Pergunta1:<br>
+                Qual linguagem é usada para estruturar páginas web?</h3>
+                <form>
+                    <!--Gerando Formulário-->
+                    <input type="radio" value="Python" id="p1a" name="pergunta1"> <!--Linha de atributos-->
+                    <label for="p1a">Python</label>
+
+                    <br>
+                    <input type="radio" value="JavaScript" id="p1b" name="pergunta2">
+                    <label for="p1b">JavaScript</label>
+
+                    <br>
+                    <input type="radio" value="HTML" id="p1c" name="pergunta3">
+                    <label for="p1c">HTML</label>
+
+                    <br>
+                    <input type="radio" value="CSS" id="p1d" name="pergunta4">
+                    <label for="p1d">CSS</label>
+                </form>
+            </section>
+
+            <!--Pergunta2: Texto-->
+            <section>
+                <h3>Pergunta2:<br>
+                Na URL <em>https://www.google.com</em> o trecho "google.com" é referente ao:</h3>
+                <form>
+                    <input type="Text" id="p2" name="pergunta2" placeholder="Digite sua resposta..."> 
+                    <!--Placeholder serve para deixar texto mais clarinho na tela, 
+                    meio que de fundo, dando direcionamento ao usuário--> 
+                </form>
+            </section>
+
+            <!--Pergunta3: Senha-->
+            <section>
+                <h3>Pergunta 3:<br>
+                Escreve um exeplo de senha forte:</h3>
+                <form>
+                    <input type="password" id="p3" name="pergunta3" placeholder="Digite uma senha...">
+                </form>
+            </section>
+
+            <!--Pergunta4: Data-->
+            <section>
+                <h3>Pergunta 4:<br>
+                Em que ano o HTML lançou sua primeira versão?</h3>
+                <form>
+                    <input type="date" id="p4" name="pergunta4">
+                </form>
+            </section>
+
+            <!--Pergunta5: Seleção múltipla -->
+            <section>
+                <h3>Pergunta 5:<br>
+                Quais dessas tecnologias são consideradas linguagens de programação?</h3>
+                <form>
+                    <input type="checkbox" id="p5a" name="pergunta5" value="JS">
+                    <label for="p5a">JS</label>
+
+                    <br>
+                    <input type="checkbox" id="p5b" name="pergunta5" value="HTML">
+                    <label for="p5b">HTML</label>
+
+                    <br>
+                    <input type="checkbox" id="p5c" name="pergunta5" value="Java">
+                    <label for="p5c">Java</label>
+
+                    <br>
+                    <input type="checkbox" id="p5d" name="pergunta5" value="GoLang">
+                    <label for="p5d">GoLang</label>
+
+                    <br>
+                    <input type="checkbox" id="p5e" name="pergunta5" value="Cobol">
+                    <label for="p5e">Cobol</label>
+                </form>
+            </section>
+
+            <!--Pergunta6: Upload de arquivo-->
+            <section>
+                <h3>Pergunta 6:<br>
+                Faça o upload de um arquivo contendo código HTML:</h3>
+                <form>
+                    <input type="file" id="p6" name="pergunta6">
+                </form>
+            </section>
+
+            <!--Pergunta7: Menu suspenso/Dropdown-->
+            <section>
+                <h3>Pergunta 7:<br>
+                Selecione o atributo do input que define o seu tipo:</h3>
+                <form>
+                    <select name="pergunta7" id="p7"> 
+                    <!--O SELECT já é o menu suspenso, dentro do SELECT que colocamos as opções do menu suspenso-->
+                        <option value="id">id</option>
+                        <option value="type">type</option>
+                        <option value="placeholder">placeholder</option>
+                        <option value="hidden">hidden</option>
+                        <option value="search">search</option>
+                    </select>
+                </form>
+            </section>
+
+            <!--Pergunta8: Adição de imagem-->
+            <section>
+                <h3>Pergunta 8:<br>
+                Qual linguagem de programação é representada pelo logo abaixo?</h3>
+                <figure>
+                    <img src="1_bdi1khId660AwBENjx9YNg.png.webp" alt="Logotipo de uma linguagem de Programação">
+                <br>
+                <figcaption>Figura 1: Logotipo de uma linguagem de programação</figcaption>
+                <!--Figcaption e o texto alternativo são coisas parecidas, mas diferentes
+                O Fig vai aparecer na tela como uma legenda da img e o ALT só vai aparecer caso a imagem não carregue-->
+                </figure>
+                <input type="text" id="p8" name="pergunta8" placeholder="Digite sua resposta...">
+            </section>
+
+            <!--Tabela de pontuação-->
+            <section>
+                <h2>Tabela de Pontuação</h2>
+                <table border="1">
+                    <thead> <!--Cabeçalho tabela-->
+                        <tr>
+                            <th>Pontuação</th>
+                            <th>Avaliação</th>
+                        </tr>
+                    </thead>
+
+                    <tbody> <!--Corpo da tabela-->
+                    <tr>
+                        <td>0-2</td>
+                        <td>Não desista! Cada tentativa é uma oportunidade de aprender.</td>
+                    </tr>
+
+                    <tr>
+                        <td>3-4</td>
+                        <td>Precisa estudar mais um pouquinho.</td>
+                    </tr>
+
+                    <tr>
+                        <td>5-6</td>
+                        <td>Dá para melhorar!</td>
+                    </tr>
+
+                    <tr>
+                        <td>7-8</td>
+                        <td>Muito bem informado!</td>
+                    </tr>
+
+                    <tr>
+                        <td>9-10</td>
+                        <td>Parabéns, mas continue sempre se atualizando.</td>
+                    </tr>
+                </tbody>
+
+                <tfoot> <!--Rodapé da tabela-->
+                    <tr>
+                        <td colspan="2">Boa sorte na próxima</td>
+                        <!--Colspan é para dizer que quero ocupar os 2 espaços da tabela, 
+                        deixando ser uma única linha-->
+                    </tr>
+                </tfoot>
+                </table>
+            </section>
+
+            <!--Lista de Respostas-->
+            <section>
+                <h3>Verifique suas respostas:</h3>
+                <details>
+                    <summary>Clique aqui para ver as respostas.</summary>
+                    <ol> <!--UL cria a lista e o OL cria lista númerada-->
+                        <li>HTML</li> 
+                        <li>Domínio</li>
+                        <li>aBcD@1234SenhaCheiaDeFirula</li>
+                        <li>1991</li>
+                        <li>JS,Java, GoLang e Cobol</li>
+                        <li>Arquivo deve ter extensão .html</li>
+                        <li>type</li>
+                        <li>Linguagem Swift</li>
+                    </ol>
+                </details>
+            </section>
+
+            <!--Formulários-->
+            <section>
+                <h3>Nos dê o seu feedback</h3>
+                <form>
+                    <fieldset> <!--FIELDLSET gera uma área apenas em volta de determinada seção-->
+                    <legend>Entre em contato</legend>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+                    
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                    <br><br>
+                    <label for="Comentário Adicional">Comentário Adicional:</label>
+                    <br>
+                    <textarea id="Comentário Adicional" name="Comentário Adicional" 
+                    rowns="4" cols="58" placeholder="Digite aqui seu comentário"></textarea>
+                    <br>
+                    <button onclick="alert('feedback enviado')">Enviar feedback</button>
+                </fieldset>
+                </form>
+            </section>
+        </main>
+
+        <!--Rodapé-->
+        <footer>
+            <p>&copy Quiz de programação. Todos os direitos reservados.</p>
+            <!--&lt gera o menor que < || &gt gera o maior que > ||-->
+
+            <!--Criando palavras clicáveis-->
+            <p>Para conhecer mais sobre mim, <a href="https://www.linkedin.com/in/danieli-baviera/" target="_blank">Clique aqui!</a></p>
+        </footer>
+    </body>
+</html>
